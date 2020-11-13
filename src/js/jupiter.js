@@ -8,7 +8,7 @@ export default class JupiterInfo {
   }
 
   calcJupiterAge() {
-    return this.jupiterAge = (this.earthAge/(this.percentEarthYear));
+    return this.jupiterAge = (this.earthAge/this.percentEarthYear);
   }
 
   calcJupiterYearsLeft() {
