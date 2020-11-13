@@ -10,5 +10,7 @@ export default class MercuryInfo {
     return this.mercuryAge = (this.earthAge/(.24));
   }
 
-  
+  calcYearsLeft() {
+    return this.yearsLeft = (this.earthLifeExpectancy - this.mercuryAge);
+  }
 };
