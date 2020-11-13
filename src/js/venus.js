@@ -1,6 +1,6 @@
 export default class VenusInfo {
   constructor(earthAge, earthLifeExpectancy) {
-    this.percentEarthYear;
+    this.percentEarthYear = .62;
     this.earthAge = earthAge;
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.venusAge;
@@ -12,6 +12,6 @@ export default class VenusInfo {
   }
 
   calcYearsLeft() {
-    return this.yearsLeft = (this.earthLifeExpectancy - this.venusAge);
+    // return this.yearsLeft = (this.earthLifeExpectancy - this.venusAge);
   }
 };
