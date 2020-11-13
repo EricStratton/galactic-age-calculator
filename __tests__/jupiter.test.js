@@ -12,4 +12,8 @@ describe ('JupiterInfo', () => {
   info.calcJupiterAge();
   expect(info.jupiterAge).toEqual(25/(11.86));
   });
+
+  test('should correctly calculate number of Jupiter years left based on Earth life expectancy', () => {
+  expect(info.jupiterYearsLeft).toEqual("jupiteryearsleft")  
+  });
 });
