@@ -8,6 +8,8 @@
 | Calculate age on Venus relative to Earth | 25 | 40.3225806 |
 | Calculate Mars age |
 | Calculate age on Mars relative to Earth | 25 | 13.2978723 |
+| Calculate Jupiter age |
+| Calculate age on Jupiter relative to Earth | 25 | 2.1079258 |
 
 ## Specs
 
@@ -26,3 +28,7 @@ Describe calcMarsAge();
 Test: "It will calculate users age on Mars relative to their age on Earth"
 Expect(Age.calcMarsAge(25).toEqual(13.2978723))
 
+Describe calcJupiterAge();
+
+Test: "It will calculate users age on Jupiter relative to their age on Earth"
+Expect(Age.calcJupiterAge(25).toEqual(2.1079258))
