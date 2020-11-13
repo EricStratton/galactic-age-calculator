@@ -16,6 +16,6 @@ describe('MercuryInfo', () => {
   test('should correctly calculate how many years user has left on Mercury based on Earth life-expectantcy', () => {
   info.calcMercuryAge();
   info.calcYearsLeft();
-  expect(info.yearsLeft).toEqual((75.3/.24) - info.mercuryAge);
+  expect(info.mercuryYearsLeft).toEqual((75.3/.24)-info.mercuryAge);
   });
 });

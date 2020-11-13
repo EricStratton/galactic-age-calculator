@@ -12,6 +12,6 @@ export default class MercuryInfo {
   }
 
   calcYearsLeft() {
-    // return this.mercuryYearsLeft = ((this.earthLifeExpectancy - this.mercuryAge);
+    return this.mercuryYearsLeft = ((this.earthLifeExpectancy/this.percentEarthYear) - this.mercuryAge);
   }
 };
