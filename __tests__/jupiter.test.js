@@ -1,10 +1,15 @@
 import JupiterAge from '../src/js/jupiter.js';
 
-describe ('JupiterAge', () => {
+describe ('JupiterInfo', () => {
+
+  let info;
+
+  beforeEach(() => {
+    info = new JupiterInfo (25)
+  });
 
   test('should correctly calculate age on Jupiter based on rotations around sun relative to Earth', () => {
-  let age = new JupiterAge(25);
-  age.calcJupiterAge();
+  info.calcJupiterAge();
   expect(age.jupiterAge).toEqual(25/(11.86));
   });
 });

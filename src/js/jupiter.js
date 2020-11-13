@@ -1,4 +1,4 @@
-export default class JupiterAge {
+export default class JupiterInfo {
   constructor(earthAge) {
     this.earthAge = earthAge;
     this.jupiterAge;
