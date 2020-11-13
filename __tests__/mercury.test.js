@@ -21,6 +21,8 @@ describe('MercuryInfo', () => {
 
   test('if user is passed life expectancy, should return how far passed in Mercury years', () => {
   info.earthAge = 80;
-  expect(info.mercuryYearsBeyond).toEqual('thismanybeyond')
+  info.calcMercuryAge();
+  info.calcMercuryYearsBeyond();
+  expect(info.mercuryYearsBeyond).toEqual(info.mercuryAge - (info.earthLifeExpectancy/info.percentEarthYear))
   })
 });
