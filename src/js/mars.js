@@ -1,4 +1,4 @@
-export default class MarsAge {
+export default class MarsInfo {
   constructor(earthAge) {
     this.earthAge = earthAge;
     this.marsAge;
