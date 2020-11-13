@@ -1,6 +1,6 @@
 export default class JupiterInfo {
   constructor(earthAge, earthLifeExpectancy) {
-    this.percentEarthYear;
+    this.percentEarthYear = 11.86;
     this.earthAge = earthAge;
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.jupiterAge;
