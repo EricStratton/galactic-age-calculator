@@ -12,4 +12,8 @@ describe ('MarsInfo', () => {
   info.calcMarsAge();
   expect(info.marsAge).toEqual(25/(1.88));
   });
+
+  test('should correctly calculate how many years user has left on Mars based on Earth life-expectantcy', () => {
+  expect(info).toEqual("thisMany");  
+  });
 });

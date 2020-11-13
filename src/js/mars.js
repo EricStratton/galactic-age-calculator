@@ -7,4 +7,8 @@ export default class MarsInfo {
   calcMarsAge() {
     return this.marsAge = (this.earthAge/(1.88));
   }
+
+  calcYearsLeft() {
+    return this.marsAge;
+  }
 };
