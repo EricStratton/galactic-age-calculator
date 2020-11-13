@@ -1,5 +1,6 @@
 export default class JupiterInfo {
   constructor(earthAge, earthLifeExpectancy) {
+    this.percentEarthYear;
     this.earthAge = earthAge;
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.jupiterAge;
@@ -7,6 +8,9 @@ export default class JupiterInfo {
   }
 
   calcJupiterAge() {
-    return this.jupiterAge = (this.earthAge/(11.86));
+    return this.jupiterAge = (this.earthAge/(this.percentEarthYear));
+  }
+
+  calcJupiterYearsLeft() {
   }
 };
