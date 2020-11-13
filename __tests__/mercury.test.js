@@ -18,4 +18,9 @@ describe('MercuryInfo', () => {
   info.calcMercuryYearsLeft();
   expect(info.mercuryYearsLeft).toEqual((75.3/.24)-info.mercuryAge);
   });
+
+  test('if user is passed life expectancy, should return how far passed in Mercury years', () => {
+  info.earthAge = 80;
+  expect(info.mercuryYearsBeyond).toEqual('thismanybeyond')
+  })
 });

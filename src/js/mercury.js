@@ -5,6 +5,7 @@ export default class MercuryInfo {
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.mercuryAge;
     this.mercuryYearsLeft;
+    this.mercuryYearsBeyond = "test";
   }
 
   calcMercuryAge() {
@@ -13,5 +14,9 @@ export default class MercuryInfo {
 
   calcMercuryYearsLeft() {
     return this.mercuryYearsLeft = ((this.earthLifeExpectancy/this.percentEarthYear) - this.mercuryAge);
+  }
+
+  calcMercuryYearsBeyond() {
+
   }
 };
