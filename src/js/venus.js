@@ -4,14 +4,14 @@ export default class VenusInfo {
     this.earthAge = earthAge;
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.venusAge;
-    this.yearsLeft;
+    this.venusYearsLeft;
   }
 
   calcVenusAge() {
     return this.venusAge = (this.earthAge/this.percentEarthYear);
   }
 
-  calcYearsLeft() {
-    // return this.yearsLeft = (this.earthLifeExpectancy - this.venusAge);
+  calcVenusYearsLeft() {
+    return this.venusYearsLeft = ((this.earthLifeExpectancy/this.percentEarthYear) - this.venusAge);
   }
 };
