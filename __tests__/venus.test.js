@@ -14,6 +14,8 @@ describe('VenusInfo', () => {
   });
 
   test('should correctly calculate how many years user has left on Venus based on Earth life-expectantcy', () => {
-  expect(info.yearsLeft).toEqual("ThisMany");
+  info.calcVenusAge();
+  info.calcYearsLeft();
+  expect(info.yearsLeft).toEqual(75.3 - (25/(.62)));
   });
 });
