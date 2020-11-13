@@ -1,10 +1,10 @@
 export default class MercuryInfo {
   constructor(earthAge, earthLifeExpectancy) {
-    this.percentEarthYear;
+    this.percentEarthYear = .24;
     this.earthAge = earthAge;
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.mercuryAge;
-    this.yearsLeft;
+    this.mercuryYearsLeft;
   }
 
   calcMercuryAge() {
@@ -12,6 +12,6 @@ export default class MercuryInfo {
   }
 
   calcYearsLeft() {
-    return this.yearsLeft = (this.earthLifeExpectancy - this.mercuryAge);
+    // return this.mercuryYearsLeft = ((this.earthLifeExpectancy - this.mercuryAge);
   }
 };
