@@ -1,5 +1,6 @@
 export default class MarsInfo {
   constructor(earthAge, earthLifeExpectancy) {
+    this.percentEarthYear;
     this.earthAge = earthAge;
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.marsAge;
@@ -7,7 +8,7 @@ export default class MarsInfo {
   }
 
   calcMarsAge() {
-    return this.marsAge = (this.earthAge/(1.88));
+    return this.marsAge = (this.earthAge/this.percentEarthYear);
   }
 
   calcYearsLeft() {
