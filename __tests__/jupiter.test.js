@@ -5,7 +5,7 @@ describe ('JupiterInfo', () => {
   let info;
 
   beforeEach(() => {
-    info = new JupiterInfo (25)
+    info = new JupiterInfo (25, 75.3);
   });
 
   test('should correctly calculate age on Jupiter based on rotations around sun relative to Earth', () => {
@@ -14,6 +14,8 @@ describe ('JupiterInfo', () => {
   });
 
   test('should correctly calculate number of Jupiter years left based on Earth life expectancy', () => {
-  expect(info.jupiterYearsLeft).toEqual("jupiteryearsleft")  
+  info.calcJupiterAge();
+  info.calcJupiterYearsLeft();
+  expect(info.jupiterYearsLeft).toEqual((75.3/11.86)-info.jupiterAge);  
   });
 });
