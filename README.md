@@ -11,8 +11,9 @@
 | Mars Info |
 | Calculate age on Mars relative to Earth | 25 | 13.2978723 |
 | Calculate remaining lifespan on Mars based on Earth life expectancy | 75.3 | 62.0021277 |
-| Calculate Jupiter age |
+| Jupiter Info |
 | Calculate age on Jupiter relative to Earth | 25 | 2.1079258 |
+| Calculate Jupiter years left based on average life span in Earth years | (25, 75.3) | 4.24114671
 
 ## Specs
 
@@ -40,7 +41,10 @@ Expect(Age.calcMarsAge(25).toEqual(13.2978723))
 Test: ""It will calculate difference between user's Mars age and their Earth life expectancy"
 Expect(Age.marsAge.calcYearsLeft(25).toEqual(62.0021277))
 
-Describe calcJupiterAge();
+Describe JupiterInfo();
 
 Test: "It will calculate users age on Jupiter relative to their age on Earth"
 Expect(Age.calcJupiterAge(25).toEqual(2.1079258))
+
+Test: "It will calculate numbers of Jupiter years user has left to live based on their life expectancy in Earth years"
+Expect(Age.jupiterAge.calcYearsLeft(75.3).toEqual(4.24114671))
