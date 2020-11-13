@@ -5,8 +5,9 @@
 | Mercury info |
 | Calculate age on Mercury relative to Earth | 25 | 104.166667 |
 | Calculate remaining lifespan on Mercury based on Earth life expectancy | 75.3 | -28.866667 |
-| Calulate Venus age |
+| Venus Info |
 | Calculate age on Venus relative to Earth | 25 | 40.3225806 |
+| Calculate remaining lifespan on Venus based on Earth life expectancy | 75.3 | 34.9774194 |
 | Calculate Mars age |
 | Calculate age on Mars relative to Earth | 25 | 13.2978723 |
 | Calculate Jupiter age |
@@ -19,13 +20,16 @@ Describe: MercuryInfo();
 Test: "It will calculate users age on Mercury relative to their age on Earth"
 Expect(Age.calcMercuryAge(25).toEqual(104.16667))
 
-Test: "It will calculate difference between user's Mercury age and their Earth life expectantcy"
+Test: "It will calculate difference between user's Mercury age and their Earth life expectancy"
 Expect(Age.mercuryAge.calcYearsLeft(25).toEqual(-28.866667))
 
-Describe: calcVenusAge();
+Describe: VenusInfo();
 
 Test: "It will calculate users age on Venus relative to their age on Earth"
 Expect(Age.calcVenusAge(25).toEqual(40.3225806))
+
+Test: "It will calculate difference between user's Venus age and their Earth life expectancy"
+Expect(Age.venusAge.calcYearsLeft(25).toEqual(34.9774194))
 
 Describe calcMarsAge();
 
