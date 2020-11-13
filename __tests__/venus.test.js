@@ -1,10 +1,19 @@
-import VenusAge from '../src/js/venus.js';
+import VenusInfo from '../src/js/venus.js';
 
-describe('VenusAge', () => {
+describe('VenusInfo', () => {
+
+  let info;
+
+  beforeEach(() => {
+    info = new VenusInfo(25, 75.3)
+  });
 
   test('should correctly calculate age on Venus based on rotations around sun relative to Earth', () => {
-  let age = new VenusAge(25);
-  age.calcVenusAge();
-  expect(age.venusAge).toEqual(25/(.62));  
+  info.calcVenusAge();
+  expect(info.venusAge).toEqual(25/(.62));  
+  });
+
+  test('should correctly calculate how many years user has left on Venus based on Earth life-expectantcy', () => {
+  expect(info.yearsLeft).toEqual("ThisMany");
   });
 });
