@@ -6,7 +6,7 @@ export default class MercuryInfo {
     this.mercuryAge;
     this.mercuryYearsLeft;
     this.mercuryYearsBeyond;
-    this.niceMessage;
+    this.niceMesage = `Wow, you're ${this.mercuryYearsBeyond} Mercury years passed your life expectancy!`;
   }
 
   calcMercuryAge() {

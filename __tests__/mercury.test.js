@@ -24,5 +24,7 @@ describe('MercuryInfo', () => {
   info.calcMercuryAge();
   info.calcMercuryYearsBeyond();
   expect(info.mercuryYearsBeyond).toEqual(info.mercuryAge - (info.earthLifeExpectancy/info.percentEarthYear))
-  })
+  });
+
+  
 });
