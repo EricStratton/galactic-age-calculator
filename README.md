@@ -1,3 +1,40 @@
+## Testing -- Galactic Calender
+
+### _Business Logic for calculating user's age on different planets, vs: 11/13/2020_
+
+### _Created by: Eric Stratton_
+
+## Description
+
+This business logic calculates user's age in different planetry years and compares with their life expectancy.
+
+## Setup/Instillation
+
+### Requirements:
+
+- Internet browser
+- Code editor if you wish to view/edit the code (recommended)
+- Node.js 
+
+### Node:
+
+- Node is a requirement for running this applcation, if you need to install it visit <https://nodejs.org/en/download/> and download the applicable version for your system
+
+### Download: 
+
+- Download this repository by clicking the green 'Code' icon and selecting download zip
+- Use your favorite zip.file opener to extract files to your local device
+
+### Terminal:
+
+- Open command terminal on local device
+- Navigate to desktop in terminal using `$ cd desktop`
+- Copy repository link by clicking on green 'Code' icon and clicking the clipboard to the right of the url
+- Use command `$ git clone {specific_repository_URL}`
+- From desktop, run command `$ cd {newly-downloaded-directory}` to navigate to the installed directory
+- Run command `code .` to open directory in default code editor
+- Once inside code editor, run `npm install` to download necessary packages to run app
+
 ## Test Table
 
 | Test | Input | Output |
@@ -48,3 +85,30 @@ Expect(Age.calcJupiterAge(25).toEqual(2.1079258))
 
 Test: "It will calculate numbers of Jupiter years user has left to live based on their life expectancy in Earth years"
 Expect(Age.jupiterAge.calcYearsLeft(75.3).toEqual(4.24114671))
+
+## Known Bugs
+
+Application is not yet complete at this time.
+
+## Support & Contact Details
+
+Do not hesitate to contact me at:
+
+<strattonericj@gmail.com>
+
+# Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- jQuery
+- Bootstrap
+- Git
+- GitHub
+
+## Licensing
+
+Copyright (c) 2020 Eric Stratton
+
+This software is licensed under the MIT license
