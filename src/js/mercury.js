@@ -5,8 +5,8 @@ export default class MercuryInfo {
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.mercuryAge;
     this.mercuryYearsLeft;
-    this.mercuryYearsBeyond;
-    this.niceMesage = `Wow, you're ${this.mercuryYearsBeyond} Mercury years passed your life expectancy!`;
+    this.mercuryDifference;
+    this.niceMessage = 'test'
   }
 
   calcMercuryAge() {
@@ -17,7 +17,11 @@ export default class MercuryInfo {
     return this.mercuryYearsLeft = ((this.earthLifeExpectancy/this.percentEarthYear) - this.mercuryAge);
   }
 
-  calcMercuryYearsBeyond() {
-    return this.mercuryYearsBeyond = (this.mercuryAge - (this.earthLifeExpectancy/this.percentEarthYear));
+  calcMercuryDifference() {
+    return this.mercuryDifference = (this.mercuryAge - (this.earthLifeExpectancy/this.percentEarthYear));
+  }
+
+  makeNiceMessage() {
+    // return this.niceMessage = `Wow, you're ${this.mercuryDifference} Mercury years passed your life expectancy!`;
   }
 };
