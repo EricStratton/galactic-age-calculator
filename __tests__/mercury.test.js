@@ -20,7 +20,6 @@ describe('MercuryInfo', () => {
   });
 
   test('should calculate difference between age in Mercury years and life expectancy in Mercury years', () => {
-    info.earthAge = 80;
     info.calcMercuryAge();
     info.calcMercuryDifference();
     expect(info.mercuryDifference).toEqual(info.mercuryAge - (info.earthLifeExpectancy/info.percentEarthYear))

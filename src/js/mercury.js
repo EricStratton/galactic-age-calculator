@@ -20,7 +20,4 @@ export default class MercuryInfo {
     return this.mercuryDifference = (this.mercuryAge - (this.earthLifeExpectancy/this.percentEarthYear));
   }
 
-  makeNiceMessage() {
-    return this.niceMessage = `Wow, you're ${this.mercuryDifference} Mercury years passed your life expectancy!`;
-  }
 };
