@@ -25,4 +25,8 @@ describe('VenusInfo', () => {
     info.calcVenusDifference();
     expect(info.venusDifference).toEqual(`Wow, you're ${info.venusAge - (info.earthLifeExpectancy/info.percentEarthYear)} Venus years passed your life expectancy!`);
   });
+
+  test('should return 0 if user has not passed their life expectancy', () => {
+    expect(info.venusDifference).toEqual(0);
+  })
 });
