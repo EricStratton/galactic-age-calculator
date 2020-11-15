@@ -27,6 +27,8 @@ describe('VenusInfo', () => {
   });
 
   test('should return 0 if user has not passed their life expectancy', () => {
+    info.calcVenusAge();
+    info.calcVenusDifference();
     expect(info.venusDifference).toEqual(0);
   })
 });

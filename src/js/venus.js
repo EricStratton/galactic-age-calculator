@@ -20,7 +20,7 @@ export default class VenusInfo {
     if (this.earthAge > this.earthLifeExpectancy) {
       this.venusDifference = `Wow, you're ${this.venusAge - (this.earthLifeExpectancy/this.percentEarthYear)} Venus years passed your life expectancy!`;
     } else {
-      
+      this.venusDifference = 0;
     }
     return this.venusDifference;
   }
