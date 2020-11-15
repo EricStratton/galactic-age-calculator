@@ -27,6 +27,8 @@ describe ('MarsInfo', () => {
   });
 
   test('should return 0 if users has not passed their life expectancy', () => {
+    info.calcMarsAge();
+    info.calcMarsDifference();
     expect(info.marsDifference).toEqual(0);
   });
 });

@@ -20,7 +20,7 @@ export default class MarsInfo {
     if (this.earthAge > this.earthLifeExpectancy) {
       this.marsDifference = `Wow, you're ${this.marsAge - (this.earthLifeExpectancy/this.percentEarthYear)} Mars years passed your life expectancy!`;
     } else {
-
+      this.marsDifference = 0;
     }
     return this.marsDifference;
   }
