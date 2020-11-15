@@ -30,5 +30,5 @@ describe('VenusInfo', () => {
     info.calcVenusAge();
     info.calcVenusDifference();
     expect(info.venusDifference).toEqual(0);
-  })
+  });
 });
