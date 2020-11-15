@@ -27,6 +27,8 @@ describe ('JupiterInfo', () => {
   });
 
   test('should return 0 if user has not passed their life expectancy', () => {
+    info.calcJupiterAge();
+    info.calcJupiterDifference();
     expect(info.jupiterDifference).toEqual(0)
   });
 

@@ -20,7 +20,7 @@ export default class JupiterInfo {
     if (this.earthAge > this.earthLifeExpectancy) {
       this.jupiterDifference = `Wow, you're ${this.jupiterAge - (this.earthLifeExpectancy/this.percentEarthYear)} Jupiter years passed your life expectancy!`;
     } else {
-      
+      this.jupiterDifference = 0;
     }
     return this.jupiterDifference;
   }
