@@ -20,6 +20,10 @@ describe ('JupiterInfo', () => {
   });
 
   test('should correctly calculate difference between age in Jupiter years and life expectancy in Jupiter years if user has passed their life expectancy', () => {
-    expect(info.jupiterDifference).toEqual("wow");
-  })
+    info.earthAge = 80;
+    info.calcJupiterAge();
+    info.calcJupiterDifference();
+    expect(info.jupiterDifference).toEqual(`Wow, you're ${info.jupiterAge - (info.earthLifeExpectancy/info.percentEarthYear)} Jupiter years passed your life expectancy!`);
+  });
+
 });
