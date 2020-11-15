@@ -9,13 +9,17 @@ describe ('JupiterInfo', () => {
   });
 
   test('should correctly calculate age on Jupiter based on rotations around sun relative to Earth', () => {
-  info.calcJupiterAge();
-  expect(info.jupiterAge).toEqual(25/(11.86));
+    info.calcJupiterAge();
+    expect(info.jupiterAge).toEqual(25/(11.86));
   });
 
   test('should correctly calculate number of Jupiter years left based on Earth life expectancy', () => {
-  info.calcJupiterAge();
-  info.calcJupiterYearsLeft();
-  expect(info.jupiterYearsLeft).toEqual((75.3/11.86)-info.jupiterAge);  
+    info.calcJupiterAge();
+    info.calcJupiterYearsLeft();
+    expect(info.jupiterYearsLeft).toEqual((75.3/11.86)-info.jupiterAge);  
   });
+
+  test('should correctly calculate difference between age in Jupiter years and life expectancy in Jupiter years if user has passed their life expectancy', () => {
+    expect(info.jupiterDifference).toEqual("wow");
+  })
 });
