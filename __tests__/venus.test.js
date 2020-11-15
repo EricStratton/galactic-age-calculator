@@ -20,6 +20,9 @@ describe('VenusInfo', () => {
   });
 
   test('should correctly calculate difference between age in Venus years and life expectancy in Venus years if user has passed their life expectancy', () => {
-    expect(info.venusDifference).toEqual("this many")
+    info.earthAge = 80;
+    info.calcVenusAge();
+    info.calcVenusDifference();
+    expect(info.venusDifference).toEqual(`Wow, you're ${info.venusAge - (info.earthLifeExpectancy/info.percentEarthYear)} Venus years passed your life expectancy!`);
   });
 });
