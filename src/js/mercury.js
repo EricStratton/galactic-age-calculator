@@ -24,5 +24,4 @@ export default class MercuryInfo {
     }
     return this.mercuryDifference;
   }
-
 };

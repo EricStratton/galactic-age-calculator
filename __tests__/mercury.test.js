@@ -26,9 +26,9 @@ describe('MercuryInfo', () => {
     expect(info.mercuryDifference).toEqual(`Wow, you're ${info.mercuryAge - (info.earthLifeExpectancy/info.percentEarthYear)} Mercury years passed your life expectancy!`);
   });
 
-    test('should return 0 to if user has not exceeded life expectancy', () => {
-      info.calcMercuryAge();
-      info.calcMercuryDifference();
-      expect(info.mercuryDifference).toEqual(0);
-    });
+  test('should return 0 to if user has not exceeded life expectancy', () => {
+    info.calcMercuryAge();
+    info.calcMercuryDifference();
+    expect(info.mercuryDifference).toEqual(0);
+  });
 });
