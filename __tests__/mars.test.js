@@ -20,6 +20,9 @@ describe ('MarsInfo', () => {
   });
 
   test('should correctly calculate difference between age in Mars years and life expectancy in Mars years if user has passed their life expectancy', () => {
-    expect(info.marsDifference).toEqual("thismany")
+    info.earthAge = 80;
+    info.calcMarsAge();
+    info.calcMarsDifference();
+    expect(info.marsDifference).toEqual(`Wow, you're ${info.marsAge - (info.earthLifeExpectancy/info.percentEarthYear)} Mars years passed your life expectancy!`);
   });
 });
