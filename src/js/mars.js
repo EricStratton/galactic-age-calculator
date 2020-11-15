@@ -5,6 +5,7 @@ export default class MarsInfo {
     this.earthLifeExpectancy = earthLifeExpectancy;
     this.marsAge;
     this.marsYearsLeft;
+    this.marsDifference = 'test';
   }
 
   calcMarsAge() {
@@ -13,5 +14,9 @@ export default class MarsInfo {
 
   calcMarsYearsLeft() {
     return this.marsYearsLeft = ((this.earthLifeExpectancy/this.percentEarthYear) - this.marsAge);
+  }
+
+  calcMarsDifference() {
+    
   }
 };

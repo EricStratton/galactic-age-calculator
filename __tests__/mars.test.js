@@ -18,4 +18,8 @@ describe ('MarsInfo', () => {
   info.calcMarsYearsLeft();
   expect(info.marsYearsLeft).toEqual((75.3/1.88)-info.marsAge);  
   });
+
+  test('should correctly calculate difference between age in Mars years and life expectancy in Mars years if user has passed their life expectancy', () => {
+    expect(info.marsDifference).toEqual("thismany")
+  });
 });
