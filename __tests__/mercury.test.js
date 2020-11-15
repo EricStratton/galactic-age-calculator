@@ -19,9 +19,16 @@ describe('MercuryInfo', () => {
     expect(info.mercuryYearsLeft).toEqual((75.3/.24)-info.mercuryAge);
   });
 
-  test('should calculate difference between age in Mercury years and life expectancy in Mercury years', () => {
+  test('should calculate difference between age in Mercury years and life expectancy in Mercury years if user has passed their life expectancy', () => {
+    info.earthAge = 80;
     info.calcMercuryAge();
     info.calcMercuryDifference();
-    expect(info.mercuryDifference).toEqual(info.mercuryAge - (info.earthLifeExpectancy/info.percentEarthYear))
+    expect(info.mercuryDifference).toEqual(`Wow, you're ${info.mercuryAge - (info.earthLifeExpectancy/info.percentEarthYear)} Mercury years passed your life expectancy!`);
   });
+
+    test('should return 0 to if user has not exceeded life expectancy', () => {
+      info.calcMercuryAge();
+      info.calcMercuryDifference();
+      expect(info.mercuryDifference).toEqual(0);
+    });
 });
