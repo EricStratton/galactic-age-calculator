@@ -17,7 +17,12 @@ export default class MercuryInfo {
   }
 
   calcMercuryDifference() {
-    return this.mercuryDifference = (this.mercuryAge - (this.earthLifeExpectancy/this.percentEarthYear));
+    if (this.earthAge > this.earthLifeExpectancy) {
+      this.mercuryDifference = `Wow, you're ${this.mercuryAge - (this.earthLifeExpectancy/this.percentEarthYear)} Mercury years passed your life expectancy!`;
+    } else {
+      this.mercuryDifference = 0;
+    }
+    return this.mercuryDifference;
   }
 
 };
