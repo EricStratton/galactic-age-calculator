@@ -26,4 +26,8 @@ describe ('JupiterInfo', () => {
     expect(info.jupiterDifference).toEqual(`Wow, you're ${info.jupiterAge - (info.earthLifeExpectancy/info.percentEarthYear)} Jupiter years passed your life expectancy!`);
   });
 
+  test('should return 0 if user has not passed their life expectancy', () => {
+    expect(info.jupiterDifference).toEqual(0)
+  });
+
 });
