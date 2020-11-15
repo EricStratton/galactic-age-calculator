@@ -18,4 +18,8 @@ describe('VenusInfo', () => {
   info.calcVenusYearsLeft();
   expect(info.venusYearsLeft).toEqual((75.3/.62)-info.venusAge);
   });
+
+  test('should correctly calculate difference between age in Venus years and life expectancy in Venus years if user has passed their life expectancy', () => {
+    expect(info.venusDifference).toEqual("this many")
+  });
 });
